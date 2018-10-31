@@ -1,2 +1,7 @@
+comtypes
+Pillow
+img2pdf
+werkzeug
 Flask
 gunicorn
+fpdf
