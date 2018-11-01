@@ -4,4 +4,4 @@ werkzeug
 Flask
 gunicorn
 fpdf
-pywin32==221
+pypiwin32==219
