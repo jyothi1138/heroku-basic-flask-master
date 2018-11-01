@@ -1,4 +1,4 @@
-from comtypes import client
+import comtypes
 import os
 from os import listdir
 import img2pdf
@@ -88,20 +88,7 @@ def upload_multipe_file():
 
 @app.route('/upload_doc_file', methods=['POST', 'GET'])
 def upload_doc_file():
-    if request.method == 'POST':
-        file = request.files['file']
-        filename = secure_filename(file.filename)
-        new_name = filename.replace(".docx", r".pdf")
-        sourcepath = os.path.join('upload', filename)
-        destinationpath = os.path.join('upload', "file.pdf")
-        file.save(sourcepath)
-        wdFormatPDF = 17
-        word = client.CreateObject("Word.Application", dynamic=True)
-        word.Visible = True
-        word.Documents.Open(os.path.abspath(sourcepath))
-        word.Documents[0].SaveAs(os.path.abspath(destinationpath), 17)
-        word.Documents[0].Close()
-        word.Quit()
+    if request.method == 'POST'
         return filename
 
 
