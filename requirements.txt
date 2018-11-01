@@ -4,3 +4,4 @@ werkzeug
 Flask
 gunicorn
 fpdf
+comtypes==1.1.2
