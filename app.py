@@ -88,8 +88,7 @@ def upload_multipe_file():
 
 @app.route('/upload_doc_file', methods=['POST', 'GET'])
 def upload_doc_file():
-    if request.method == 'POST'
-        return filename
+    return filename
 
 
 if __name__ == '__main__':
