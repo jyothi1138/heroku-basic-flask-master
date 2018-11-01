@@ -1,4 +1,3 @@
-comtypes
 Pillow
 img2pdf
 werkzeug
