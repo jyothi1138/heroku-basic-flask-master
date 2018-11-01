@@ -1,4 +1,3 @@
-import comtypes
 import os
 from os import listdir
 import img2pdf
