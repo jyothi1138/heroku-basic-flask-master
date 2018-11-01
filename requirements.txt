@@ -5,3 +5,4 @@ Flask
 gunicorn
 fpdf
 comtypes==1.1.7
+ctypes
