@@ -1,4 +1,4 @@
-import win32com.client
+import comtypes
 import os
 from os import listdir
 import img2pdf
@@ -96,7 +96,7 @@ def upload_doc_file():
         destinationpath = os.path.join('upload', "file.pdf")
         file.save(sourcepath)
         wdFormatPDF = 17
-        word = win32com.client.Dispatch('Word.Application')
+        word = comtypes.client.Dispatch('Word.Application')
         word.Visible = True
         word.Documents.Open(os.path.abspath(sourcepath))
         word.Documents[0].SaveAs(os.path.abspath(destinationpath), 17)
