@@ -4,6 +4,5 @@ werkzeug
 Flask
 gunicorn
 fpdf
-ctypes==1.0.2
 comtypes==1.1.7
 pypi
